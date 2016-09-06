@@ -1,0 +1,25 @@
+PODS:
+  - APIKit (2.0.4):
+    - Result (~> 2.1.1)
+  - AWSCognitoIdentityProvider (2.4.7):
+    - AWSCore (= 2.4.7)
+  - AWSCore (2.4.7)
+  - Himotoki (2.1.1)
+  - Result (2.1.3)
+
+DEPENDENCIES:
+  - APIKit (~> 2.0)
+  - AWSCognitoIdentityProvider
+  - AWSCore
+  - Himotoki (~> 2.1.1)
+
+SPEC CHECKSUMS:
+  APIKit: '08089ab5da33faece57dfecc4bfe787a731e218b'
+  AWSCognitoIdentityProvider: 2afc07e3e7b89738921845d7fe3369246a4358b9
+  AWSCore: 9a729a3c0050a51ece3547d546c327acdac7838a
+  Himotoki: 0e539e721830384e128b0c0c94cbd9693ca30761
+  Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
+
+PODFILE CHECKSUM: 2979b1004c8440e6fda74ae60ee9351355345310
+
+COCOAPODS: 1.0.1
