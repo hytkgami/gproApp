@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BB9FD56568BEAC2C60F4FAD8815258D8AE27C887",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BB9FD56568BEAC2C60F4FAD8815258D8AE27C887" : 0,
+    "AD3C66B78FAA30CA94159546F21D2082B5C61A47" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "66B42BBF-0EA5-4AA1-BB44-3767DE02E8BF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BB9FD56568BEAC2C60F4FAD8815258D8AE27C887" : "ios\/",
+    "AD3C66B78FAA30CA94159546F21D2082B5C61A47" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "gpro",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "gpro\/gpro.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/akaimo\/gpro-serverless.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AD3C66B78FAA30CA94159546F21D2082B5C61A47"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hytkgami\/gproApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BB9FD56568BEAC2C60F4FAD8815258D8AE27C887"
+    }
+  ]
+}

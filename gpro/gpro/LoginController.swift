@@ -1,38 +1,35 @@
 //
-//  ViewController.swift
+//  LoginController.swift
 //  gpro
 //
-//  Created by Ryojiro Kobayashi on 8/28/16.
+//  Created by Ryojiro Kobayashi on 9/17/16.
 //  Copyright © 2016 Ryojiro Kobayashi. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import AWSCognitoIdentityProvider
 import APIKit
 
-class ViewController: UIViewController {
-
-    @IBAction func backToLP (segue: UIStoryboardSegue) {
-        
-    }
+class LoginController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func textFieldShouldClear(textField: UITextField) -> Bool {
-        textField.text = ""
-        return true
+    @IBAction func backToLP (segue: UIStoryboardSegue) {
+        
     }
+    
     @IBAction func tapView(sender: AnyObject) {
         self.view.endEditing(true)
     }
-
+    
     @IBOutlet weak var in_name: UITextField!
     @IBOutlet weak var in_email: UITextField!
     @IBOutlet weak var in_password: UITextField!
@@ -81,6 +78,10 @@ class ViewController: UIViewController {
             print(user)
             return nil
         }
+        //セグエ
+        //本当は認証成功したときに移動したい
+        let targetViewController = self.storyboard!.instantiateViewControllerWithIdentifier("confirm") as! LoginController
+        self.presentViewController( targetViewController, animated: true, completion: nil)
     }
     
     @IBOutlet weak var confirmNum: UITextField!
@@ -101,7 +102,9 @@ class ViewController: UIViewController {
             print(task.result)
             return nil
         }
-        let targetViewController = self.storyboard!.instantiateViewControllerWithIdentifier("login") as! ViewController
+        //セグエ
+        //本当は認証成功したときに移動したい
+        let targetViewController = self.storyboard!.instantiateViewControllerWithIdentifier("login") as! LoginController
         self.presentViewController( targetViewController, animated: true, completion: nil)
     }
     
@@ -110,10 +113,23 @@ class ViewController: UIViewController {
     @IBAction func SignIn(sender: AnyObject) {
         // ログインにはUsernameとパスワードが必要になりますが、Usernameはユーザーに公開してはいけないので、
         // Usernameのエイリアスとして設定したメールアドレスとパスワードでログインします。
+        var in_email: String, in_password: String;
+        if let chk : String = login_email.text {
+            in_email = chk
+        } else {
+            print("error")
+            return
+        }
+        if let chk : String = login_password.text {
+            in_password = chk
+        } else {
+            print("error")
+            return
+        }
+        
         let pool = AWSCognitoIdentityUserPool(forKey: "AmazonCognitoIdentityProvider")
         let user = pool.getUser()
-        //メールアドレスでログイン出来ないため、NSuserDefaultでログインしている
-        user.getSession(NSUserDefaults.standardUserDefaults().stringForKey("myname")!, password: login_password.text!, validationData: nil, scopes: nil).continueWithBlock { task in
+        user.getSession(in_email, password: in_password, validationData: nil, scopes: nil).continueWithBlock { task in
             if task.error != nil {
                 print("---error---")
                 print(task.error)
@@ -125,6 +141,8 @@ class ViewController: UIViewController {
             print(user.signedIn)
             return nil
         }
+        //セグエ
+        //本当は認証成功したときに移動したい
         let targetViewController = self.storyboard!.instantiateViewControllerWithIdentifier("guestTop") as! TopController
         self.presentViewController( targetViewController, animated: true, completion: nil)
     }

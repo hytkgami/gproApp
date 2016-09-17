@@ -9,7 +9,7 @@
         <!--LP-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LP" id="BYZ-38-t0r" customClass="ViewController" customModule="gpro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LP" id="BYZ-38-t0r" customClass="LoginController" customModule="gpro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,7 +23,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="ユーザ登録"/>
                                 <connections>
-                                    <segue destination="Vuc-LX-1nM" kind="presentation" modalTransitionStyle="flipHorizontal" id="437-eO-pw8"/>
+                                    <segue destination="Vuc-LX-1nM" kind="presentation" modalTransitionStyle="coverVertical" id="437-eO-pw8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXW-7U-3kh">
@@ -31,7 +31,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="ログイン"/>
                                 <connections>
-                                    <segue destination="xns-rs-v1J" kind="show" id="t9b-fS-3pg"/>
+                                    <segue destination="xns-rs-v1J" kind="presentation" modalTransitionStyle="flipHorizontal" id="t9b-fS-3pg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,7 +52,7 @@
         <!--Register-->
         <scene sceneID="e7D-pE-wcT">
             <objects>
-                <viewController title="Register" id="Vuc-LX-1nM" customClass="ViewController" customModule="gpro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register" id="Vuc-LX-1nM" customClass="LoginController" customModule="gpro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hQ6-4A-kn5"/>
                         <viewControllerLayoutGuide type="bottom" id="Re7-hS-hIC"/>
@@ -69,7 +69,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Back"/>
                                         <connections>
-                                            <segue destination="z4z-nU-5eu" kind="unwind" unwindAction="backToLP:" id="cGr-Oc-H6d"/>
+                                            <segue destination="z4z-nU-5eu" kind="unwind" unwindAction="backToLP:" id="9Ks-Lz-sbT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="SignUp" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3W-mr-uEU">
@@ -78,7 +78,6 @@
                                         <state key="normal" title="Register"/>
                                         <connections>
                                             <action selector="signUp:" destination="Vuc-LX-1nM" eventType="touchUpInside" id="E90-iv-V4n"/>
-                                            <segue destination="fmE-9z-RRM" kind="presentation" modalTransitionStyle="flipHorizontal" id="u0X-yI-ROD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -122,34 +121,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfT-6Y-SOr">
-                                <rect key="frame" x="144" y="124" width="56" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NICKNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfT-6Y-SOr">
+                                <rect key="frame" x="98" y="124" width="102" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zet-Y2-Z5Q">
                                 <rect key="frame" x="142" y="183" width="58" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rm9-WP-oSy">
                                 <rect key="frame" x="110" y="301" width="90" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIRTHDAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZL-w5-YII">
                                 <rect key="frame" x="106" y="360" width="94" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZID-Dp-lGG">
                                 <rect key="frame" x="91" y="242" width="109" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NcP-Nn-TC8">
@@ -194,11 +193,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="UWw-tU-B99"/>
                     <connections>
-                        <outlet property="in_address" destination="b80-ea-aD2" id="ieG-GN-caT"/>
-                        <outlet property="in_birthday" destination="Nga-aN-7xo" id="0jX-kT-u8c"/>
-                        <outlet property="in_email" destination="Vqe-hI-wfV" id="k7j-A0-wh1"/>
-                        <outlet property="in_name" destination="32v-Ka-YXe" id="UpZ-YT-1oh"/>
-                        <outlet property="in_password" destination="NcP-Nn-TC8" id="aYc-nH-uZg"/>
+                        <outlet property="in_address" destination="b80-ea-aD2" id="AQZ-oY-eIV"/>
+                        <outlet property="in_birthday" destination="Nga-aN-7xo" id="Zwp-xD-hDI"/>
+                        <outlet property="in_email" destination="Vqe-hI-wfV" id="zd4-2q-nik"/>
+                        <outlet property="in_name" destination="32v-Ka-YXe" id="MBF-oI-ElZ"/>
+                        <outlet property="in_password" destination="NcP-Nn-TC8" id="R7A-B6-gEd"/>
                     </connections>
                 </viewController>
                 <exit id="z4z-nU-5eu" userLabel="Exit" sceneMemberID="exit"/>
@@ -211,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="1883" y="-665"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirm-->
         <scene sceneID="xcW-jj-KuQ">
             <objects>
-                <viewController id="fmE-9z-RRM" customClass="ViewController" customModule="gpro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="confirm" title="Confirm" id="fmE-9z-RRM" customClass="LoginController" customModule="gpro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mf7-cc-Rkj"/>
                         <viewControllerLayoutGuide type="bottom" id="qHm-7f-pKb"/>
@@ -235,7 +234,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NUMBER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="156-i6-nIs">
                                 <rect key="frame" x="117" y="288" width="83" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcK-du-cGs">
@@ -243,7 +242,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="CONFIRM"/>
                                 <connections>
-                                    <action selector="Confirm:" destination="fmE-9z-RRM" eventType="touchUpInside" id="767-Jh-5tW"/>
+                                    <action selector="Confirm:" destination="fmE-9z-RRM" eventType="touchUpInside" id="ZCK-8E-nS1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnc-GR-kmg">
@@ -268,7 +267,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="confirmNum" destination="001-ov-PfM" id="3uh-ga-QeD"/>
+                        <outlet property="confirmNum" destination="001-ov-PfM" id="s3e-d6-Ho7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3eg-rG-x2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,7 +278,7 @@
         <!--Login-->
         <scene sceneID="zqK-h4-mXh">
             <objects>
-                <viewController storyboardIdentifier="login" title="Login" id="xns-rs-v1J" customClass="ViewController" customModule="gpro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" title="Login" id="xns-rs-v1J" customClass="LoginController" customModule="gpro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mbp-ZH-iYb"/>
                         <viewControllerLayoutGuide type="bottom" id="Vee-u1-vU0"/>
@@ -309,13 +308,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="en1-2z-kEp">
                                 <rect key="frame" x="142" y="258" width="58" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmz-60-P4b">
                                 <rect key="frame" x="91" y="318" width="109" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qL-C8-C3a">
@@ -323,8 +322,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="LOGIN"/>
                                 <connections>
-                                    <action selector="Confirm:" destination="fmE-9z-RRM" eventType="touchUpInside" id="FCI-W6-7Dz"/>
-                                    <action selector="SignIn:" destination="xns-rs-v1J" eventType="touchUpInside" id="T9v-Q6-mrg"/>
+                                    <action selector="SignIn:" destination="xns-rs-v1J" eventType="touchUpInside" id="uym-Ip-Cid"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5I5-7O-0sg">
@@ -332,7 +330,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="the-yY-eh6"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="3Lu-nB-0DW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -353,8 +351,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="login_email" destination="CAh-hP-eaA" id="7kP-Tx-rpL"/>
-                        <outlet property="login_password" destination="lkT-9u-p9o" id="bYB-hL-8E0"/>
+                        <outlet property="login_email" destination="CAh-hP-eaA" id="nDi-wa-hTu"/>
+                        <outlet property="login_password" destination="lkT-9u-p9o" id="wDH-ac-Ncm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tBb-N7-O7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -364,7 +362,7 @@
         <!--GuestTOP-->
         <scene sceneID="4GT-V0-b1N">
             <objects>
-                <viewController storyboardIdentifier="guestTop" title="GuestTOP" id="KSL-8T-uQ1" customClass="ViewController" customModule="gpro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="guestTop" title="GuestTOP" id="KSL-8T-uQ1" customClass="TopController" customModule="gpro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tal-x1-bsn"/>
                         <viewControllerLayoutGuide type="bottom" id="VRG-cx-IyZ"/>

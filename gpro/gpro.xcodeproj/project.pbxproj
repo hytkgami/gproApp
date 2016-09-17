@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		071CE63743D6CE307E24F0D6 /* Pods_gpro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D42AFE2379082A6E9242EF /* Pods_gpro.framework */; };
 		0E363602148C43A2FF0F3C61 /* Pods_gproTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06BEE6A959CAFF8891CB9DD1 /* Pods_gproTests.framework */; };
+		8F7663B11D8D27A0009237D6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7663B01D8D27A0009237D6 /* LoginController.swift */; };
+		8F7663B31D8D2E22009237D6 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7663B21D8D2E22009237D6 /* TopController.swift */; };
 		8FB6317F1D729B1D00714655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB6317E1D729B1D00714655 /* AppDelegate.swift */; };
 		8FB631811D729B1D00714655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB631801D729B1D00714655 /* ViewController.swift */; };
 		8FB631841D729B1D00714655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB631821D729B1D00714655 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		22B85911E1888F7D8F396D95 /* Pods-gpro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gpro.release.xcconfig"; path = "Pods/Target Support Files/Pods-gpro/Pods-gpro.release.xcconfig"; sourceTree = "<group>"; };
 		454C5571284D552ADDCB2197 /* Pods_gproUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gproUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		679FECF403017D9C8BD9EEC0 /* Pods-gproUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gproUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gproUITests/Pods-gproUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8F7663B01D8D27A0009237D6 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		8F7663B21D8D2E22009237D6 /* TopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopController.swift; sourceTree = "<group>"; };
 		8FB6317B1D729B1D00714655 /* gpro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gpro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB6317E1D729B1D00714655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB631801D729B1D00714655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				8FB6317E1D729B1D00714655 /* AppDelegate.swift */,
+				8F7663B21D8D2E22009237D6 /* TopController.swift */,
+				8F7663B01D8D27A0009237D6 /* LoginController.swift */,
 				8FB631801D729B1D00714655 /* ViewController.swift */,
 				8FB631821D729B1D00714655 /* Main.storyboard */,
 				8FB631851D729B1D00714655 /* Assets.xcassets */,
@@ -427,6 +433,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F7663B11D8D27A0009237D6 /* LoginController.swift in Sources */,
+				8F7663B31D8D2E22009237D6 /* TopController.swift in Sources */,
 				8FB631811D729B1D00714655 /* ViewController.swift in Sources */,
 				8FB6317F1D729B1D00714655 /* AppDelegate.swift in Sources */,
 			);
